@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ body {
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.title{ 
+    font-size: 40px;
+    font-weight: 300px;
+    margin: 0 0 20px 0;
+    color: black;
+    text-shadow: 3px 1px black;
+}
+.container{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+.container:focus {
+    outline: none;
+}
+.newtask{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 20px;
+}
+.entertask{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+.entertask:focus {
+    outline: none;
+}
+.addtask{
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    outline: none;
+    color: black;
+    font-size: 15px;
+}
+.addtask:hover{
+    background-color: aquamarine;
+    color: white;
+ }
+ .tasks{
+    margin-top: 10px;
+    max-width: 120%;   
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item.check-button, .trash-button{
+    font-size: 15px;
+    color: rgb(211, 70, 211);
+    font-weight: 400px;
+    letter-spacing: 2px;
+}
+.itemall {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 80% 10% 10%;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.check-button, .trash-button {
+    font-size: 15px;
+}
+.trash-button {
+    border-radius: 5px 5px 5px 5px;
+}
+.check-button:hover {
+    background-color: #37b3cc;
+    color: white;
+}
+.trash-button:hover {
+    background-color: #6b73c1;
+    color: white;
+}
+.checklist {
+    text-decoration: line-through;
+}
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+button, .check-button, .trash-button {
+    cursor: pointer;
+}
